@@ -45,7 +45,7 @@ public class PrestaNegativeScenerios {
 		driver.findElement(By.id("email")).sendKeys("meme.com");
 		driver.findElement(By.id("passwd")).sendKeys("123.8" + Keys.ENTER);
 		String authentication = driver.findElement(By.xpath("//*[@id=\"center_column\"]/div[1]/ol/li")).getText();
-		Assert.assertTrue(authentication.contains("Invalid email address."));
+		Assert.assertTrue(authentication.contains("Invad email address."));
 	}
 	@Test
 	public void BlankEMailTest() {
